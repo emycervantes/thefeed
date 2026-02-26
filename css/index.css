@@ -1,12 +1,17 @@
-.centergif{
-    display:block;
-    margin-left: auto;
-    margin-right: auto;
-    width:300px
-}
-
-.centergif{
-    text-align: center;
+html, body{
+    height: 100%;
+    margin: 0;
 }
 
 
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100hv;
+}
+
+.centergif{
+    display: block;
+    width: 750px;
+}
