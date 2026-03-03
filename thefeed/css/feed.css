@@ -7,7 +7,7 @@ body{
   background-position: center;
   background-attachment: fixed;
   background-size: 1500px;
-  cursor: url('/img/smallmouse.png'), auto;
+  cursor: url('../img/smallmouse.png'), auto;
   position: relative;
   padding-bottom: 400px;
 }
