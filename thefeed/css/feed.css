@@ -1,6 +1,14 @@
+
+
 body{
-  background-color: #8a1616;
-  color: aliceblue;  
+  background-color: #fff5f2;
+  color: #fff5f2;  
+  background-image: url('../img/stardust.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: 1500px;
+  cursor: url('../img/smallmouse.png'), auto;
 }
 
 
@@ -19,15 +27,40 @@ h1{
     font-weight: 400;
     font-style: normal;
     text-align: center;
+    color: #8a1616;
 }
 
-.starpic{
-    width:250px;
-    height:auto;
-    position: absolute;
-    top: 20px;
-    right:20px;
+.bio-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
+
+.bio-box {
+  position: static;     
+  width: 230px;          /* chosen size */
+  margin: 40px auto;    
+  padding: 18px;
+  background-color: #8a1616;
+  border: 7px solid #fff5f2;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  text-align: center;
+}
+
+.bio-title{
+  font-family: "Tangerine";
+  color: #fff5f2;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0;
+  z-index: 10;
+}
+
 
 .media-grid {
   display: grid;
@@ -39,60 +72,173 @@ h1{
 }
 
 .media-item {
-  border: 7px solid #e5e5e5; /* crisp white border */
-
+  border: 7px solid #fff5f2; /* crisp white border */
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-
+  margin: auto;
   padding: 20px;
   border-radius: 12px;
-
+  background-color: #8a1616;
   width: 100%;
   max-width: 500px;
-  margin: 0 auto 40px auto;
-
   gap: 15px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
 
 .feedgif{
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
-    width: 150px;
+    width: 170px;
     height: auto;
 }
 
-.spotifyplay-grid{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  width: 80%;
-  margin: 40px auto
+.onebox-title{
+  font-family: "Tangerine";
+  color: #fff5f2;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0;
+  z-index: 10;
 }
 
-.spotifyplay{
+.twobox-title{
+  font-family: "Tangerine";
+  color: #fff5f2;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0;
+  z-index: 10;
+}
+
+.threebox-title{
+  font-family: "Tangerine";
+  color: #fff5f2;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.fourbox-title{
+  font-family: "Tangerine";
+  color: #fff5f2;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.fivebox-title{
+   font-family: "Tangerine";
+  color: #fff5f2;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.sixbox-title{
+   font-family: "Tangerine";
+  color: #fff5f2;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.sevenbox-title{
+   font-family: "Tangerine";
+  color: #fff5f2;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.eightbox-title{
+   font-family: "Tangerine";
+  color: #fff5f2;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.ninebox-title{
+  font-family: "Tangerine";
+  color: #fff5f2;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.tenbox-title{
+  font-family: "Tangerine";
+  color: #fff5f2;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.elevenbox-title{
+  font-family: "Tangerine";
+  color: #fff5f2;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.twelvebox-title{
+  font-family: "Tangerine";
+  color: #fff5f2;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.bottom-stars {
+  position: absolute;
+  bottom: 40px;          /* distance from bottom of page */
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
+  gap: 40px;             /* spacing between stars */
   justify-content: center;
   align-items: center;
-  padding: 20px;
-  border-radius: 12px;
+}
+
+.star {
+  position: relative;
+  display: inline-block;
   text-decoration: none;
-  color: white;
-  font-size: 1.2rem;
-  background-color: #ffc0cb(255, 255, 255, 0.1);
-  transition: 0.3s ease;
-  border: 2px solid #ffc0cb;
+  text-decoration: none;
+  width: 300px;
+  height: 300px;
 }
 
-.spotifyplay:hover{
-  background-color: rgba(255, 255, 255, 0.2);
-  transform: scale(1.03);
+.star img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
 }
 
-.playmusic-img{
-  width: 120px;
-  height: auto;
+.star span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff5f2;       
+  font-family: "Tangerine", cursive;
+  font-size: 25px;       /* adjust text size */
 }
+
