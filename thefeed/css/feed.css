@@ -2,7 +2,7 @@
 body{
   background-color: #fff5f2;
   color: #fff5f2;  
-  background-image: url('/img/stardust.png');
+  background-image: url('../img/stardust.png');
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
